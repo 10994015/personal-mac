@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>李承諺 Li Cheng-Yan — CV</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&family=Outfit:wght@400;500;600;800&display=swap">
+<style>
+  @page { size: A4; margin: 0; }
+  :root {
+    --ink: #1d1d1f; --ink-2: #4a4a50; --ink-3: #85858c; --line: #e4e4e0;
+    --accent: #2f6ef0; --side: #f5f5f3;
+    --sans: 'Outfit', 'Noto Sans TC', sans-serif; --mono: 'JetBrains Mono', 'Noto Sans TC', monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #fff; color: var(--ink); font: 400 9.4pt/1.6 var(--sans); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  h1, h2, h3, p, ul { margin: 0; }
+  a { color: inherit; text-decoration: none; }
+  .page { width: 210mm; min-height: 297mm; display: grid; grid-template-columns: 62mm 1fr; }
+  .page + .page { break-before: page; }
+
+  /* sidebar */
+  aside { background: var(--side); padding: 16mm 7mm 8mm 11mm; }
+  .page:not(:first-child) aside { padding-top: 14mm; }
+  aside section + section { margin-top: 5.5mm; }
+  aside h2 { font: 600 7.6pt var(--mono); letter-spacing: .12em; color: var(--ink-3); margin-bottom: 2.4mm; text-transform: uppercase; }
+  .contact li { display: grid; grid-template-columns: 11mm 1fr; font-size: 8.6pt; line-height: 1.75; word-break: break-all; }
+  .contact span { color: var(--ink-3); }
+  .skill-group + .skill-group { margin-top: 3mm; }
+  .skill-group h3 { font-size: 8.4pt; font-weight: 600; margin-bottom: 1mm; }
+  .chips { display: flex; flex-wrap: wrap; gap: 1.2mm; list-style: none; padding: 0; }
+  .chips li { font: 500 7.4pt/1.5 var(--mono); padding: .3mm 1.8mm; border: 1px solid #d8d8d3; border-radius: 1.4mm; background: #fff; }
+  .plain { list-style: none; padding: 0; font-size: 8.6pt; }
+  .plain li + li { margin-top: 1.4mm; }
+  .plain small { display: block; color: var(--ink-3); font-size: 7.8pt; }
+
+  /* main */
+  main { padding: 16mm 13mm 12mm 10mm; }
+  .page:not(:first-child) main { padding-top: 14mm; }
+  header h1 { font: 800 25pt/1.05 var(--sans); letter-spacing: -.01em; }
+  header h1 small { font-size: 12.5pt; font-weight: 500; color: var(--ink-3); margin-left: 2.5mm; letter-spacing: 0; }
+  header .title { margin-top: 2mm; font-size: 11pt; font-weight: 500; color: var(--accent); }
+  header .summary { margin-top: 4mm; color: var(--ink-2); font-size: 9.2pt; line-height: 1.75; }
+  main > section { margin-top: 7mm; }
+  main h2 { display: flex; align-items: center; gap: 3mm; font: 600 7.6pt var(--mono); letter-spacing: .12em; color: var(--ink-3); text-transform: uppercase; margin-bottom: 3.5mm; }
+  main h2::after { content: ''; flex: 1; height: 1px; background: var(--line); }
+
+  .job { break-inside: avoid; }
+  .job + .job { margin-top: 5mm; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; }
+  .job-head h3 { font-size: 10.6pt; font-weight: 700; }
+  .job-head time { flex: none; font: 400 8pt var(--mono); color: var(--ink-3); }
+  .job-meta { font-size: 8.6pt; color: var(--ink-2); margin-top: .4mm; }
+  .job-meta b { font-weight: 600; color: var(--accent); }
+  .job p.intro { margin-top: 1.6mm; color: var(--ink-2); }
+  .job ul { margin-top: 1.6mm; padding-left: 4mm; color: var(--ink-2); }
+  .job li { padding-left: .6mm; }
+  .job li + li { margin-top: .6mm; }
+  .job li b { color: var(--ink); font-weight: 600; }
+  .tags { margin-top: 1.6mm; font: 400 7.6pt var(--mono); color: var(--ink-3); }
+
+  .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 2.4mm 6mm; }
+  .project { break-inside: avoid; }
+  .project h3 { font-size: 9.2pt; font-weight: 600; }
+  .project p { font-size: 8.4pt; color: var(--ink-2); }
+  .project a { font: 400 7.6pt var(--mono); color: var(--accent); }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <aside>
+    <section>
+      <h2>Contact</h2>
+      <ul class="plain contact">
+        <li><span>電話</span><a href="tel:0938599191">0938-599-191</a></li>
+        <li><span>Email</span><a href="mailto:cy9577@gmail.com">cy9577@gmail.com</a></li>
+        <li><span>地區</span>桃園市桃園區</li>
+        <li><span>GitHub</span><a href="https://github.com/10994015">github.com/10994015</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skill-group"><h3>後端</h3><ul class="chips"><li>PHP</li><li>Laravel</li><li>Livewire</li><li>Python</li><li>FastAPI</li><li>RESTful API</li><li>WebSocket</li><li>Swagger</li></ul></div>
+      <div class="skill-group"><h3>資料庫與快取</h3><ul class="chips"><li>MySQL</li><li>MS SQL</li><li>Redis</li><li>Elasticsearch</li></ul></div>
+      <div class="skill-group"><h3>DevOps 與雲端</h3><ul class="chips"><li>AWS</li><li>Docker</li><li>GitLab</li><li>Jenkins</li><li>GitHub Actions</li><li>Git</li><li>Linux / Ubuntu</li><li>Nginx</li><li>Apache</li><li>OWASP ZAP</li></ul></div>
+      <div class="skill-group"><h3>前端</h3><ul class="chips"><li>JavaScript</li><li>Vue.js (SPA)</li><li>Alpine.js</li><li>CSS / SCSS</li><li>TailwindCSS</li><li>Bootstrap</li><li>RWD</li></ul></div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul class="plain">
+        <li><b>中原大學 資訊管理學系 碩士</b><small>2020/9 – 2022/6</small></li>
+        <li><b>中原大學 資訊管理學系 學士</b><small>2016/9 – 2020/6</small></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul class="plain">
+        <li>AWS Certified Cloud Practitioner（CCP）</li>
+        <li>Microsoft Technology Associate：Python</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Awards</h2>
+      <ul class="plain">
+        <li>資訊服務創業創新競賽 佳作</li>
+        <li>中原大學畢業專題競賽 第三名</li>
+        <li>全國資訊管理前瞻技術研討會 <span style="white-space:nowrap">第五名</span></li>
+        <li>中原大學優良課業守護天使<small>109 學年度第 2 學期</small></li>
+      </ul>
+    </section>
+  </aside>
+
+  <main>
+    <header>
+      <h1>李承諺<small>Li Cheng-Yan</small></h1>
+      <p class="title">後端工程師 · 全端工程師</p>
+      <p class="summary">近 5 年 PHP / Laravel 開發經驗。曾參與統一資訊自營電商平台 iOpenMall 的開發與維護，並主導企業內部 WMS、BPM 系統從需求分析、系統設計到上線驗收的完整流程。熟悉 AWS 雲端架構、Docker 容器化部署，並建立 GitLab + Jenkins 自動化部署流程提升團隊開發效率；也具備跨部門需求分析、系統重構與教學培訓經驗。碩士論文以生成對抗網路（GAN）研究室內設計 3D 擬真圖生成。</p>
+    </header>
+
+    <section>
+      <h2>Experience</h2>
+
+      <article class="job">
+        <div class="job-head"><h3>軟體資深開發工程師</h3><time>2025/6 – 2026/4</time></div>
+        <p class="job-meta"><b>緯創軟體股份有限公司</b> · 新北市汐止區 · 11 個月</p>
+        <p class="intro">負責統一資訊自營電商平台 iOpenMall 的系統開發與維護。</p>
+        <ul>
+          <li>使用 PHP / MySQL / Laravel 進行網站功能開發與改版。</li>
+          <li>分析並解決網站營運中的程式錯誤與效能瓶頸。</li>
+          <li>撰寫 API 介接內部系統，提升資料流通效率；與前端及設計團隊協作優化使用者體驗與後台流程。</li>
+          <li>參與功能需求討論與系統架構規劃。</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head"><h3>後端工程師</h3><time>2023/9 – 2025/3</time></div>
+        <p class="job-meta"><b>永佳捷科技股份有限公司</b> · 桃園市觀音區 · 1 年 7 個月</p>
+        <ul>
+          <li><b>主導部門應用系統開發流程</b>：從需求分析、系統設計、程式編寫到需求驗收，並負責進度控制、系統效能與正式環境上線的把關。</li>
+          <li>開發與維護公司內部 <b>WMS、BPM</b> 系統（PHP、Laravel、MySQL、MS SQL、Alpine.js、Redis）。</li>
+          <li>維護 AWS 雲端（EC2、RDS、ElastiCache），並建置 <b>GitLab + Jenkins 自動化部署流程</b>。</li>
+        </ul>
+        <p class="tags">#AWS #PHP #MySQL #MS SQL #Git #Linux</p>
+      </article>
+
+      <article class="job">
+        <div class="job-head"><h3>軟體開發工程師</h3><time>2022/10 – 2023/8</time></div>
+        <p class="job-meta"><b>昂科資訊有限公司</b> · 桃園市桃園區 · 11 個月</p>
+        <p class="intro">碩士畢業後與同學共同投入接案，承接多元客戶專案，累積完整開發流程與商業談案經驗。</p>
+        <ul>
+          <li><b>寵物美容業 CRM 系統</b>（Laravel、Livewire）：產品化給多家分店使用，含客戶與會員等級、寵物檔案、營收與回購率分析。</li>
+          <li><b>中原大學衛教互動遊戲平台</b>（Laravel、Redis）：以限流、負載均衡與 Redis 快取承接大流量，並開發公平的抽獎系統；另以 Canvas API 開發 NPC 網頁遊戲。</li>
+          <li><b>台灣碳材料學會部落格與後台</b>（Vue.js、Laravel、JWT）：JWT 身份驗證與 API 存取控制。</li>
+          <li>誠正會計事務所官網與客戶管理系統（Laravel）、泰溥報修系統（Vue.js，串接後端 API）。</li>
+          <li>U-start 創新創業計畫技術顧問：協助新創團隊技術選型、架構規劃與排除技術瓶頸。</li>
+          <li>中原大學國貿系碩專班「數位轉型與技術應用」、「網站資料庫實務應用」課程講師。</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</div>
+
+<div class="page">
+  <aside>
+    <section>
+      <h2>Thesis</h2>
+      <ul class="plain">
+        <li><b>以生成對抗網路為基礎將室內設計三維模型轉換之研究</b><small>以 SketchUp 蒐集室內圖片，訓練 Pix2pix 與 CycleGAN，將素模轉換為 3D 擬真圖並與 VRay 渲染結果比較。</small></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Campus</h2>
+      <ul class="plain">
+        <li>資訊管理系學習護照講師</li>
+        <li>Python 課後輔導助教</li>
+        <li>前端網站設計課程助教</li>
+        <li>PHP 課後輔導家教</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Language</h2>
+      <ul class="plain"><li>英文：聽、說、讀、寫中等</li></ul>
+    </section>
+  </aside>
+
+  <main>
+    <section style="margin-top:0">
+      <h2>Experience · 續</h2>
+      <article class="job">
+        <div class="job-head"><h3>前端工程師</h3><time>2021/6 – 2022/10</time></div>
+        <p class="job-meta"><b>憶旺智慧股份有限公司</b> · 新竹縣竹東鎮 · 1 年 5 個月</p>
+        <ul>
+          <li>使用 HTML、CSS 切版，以 JavaScript、Vue.js、PHP、MySQL 開發網頁前端與後台。</li>
+          <li>協助將 PHP 導入公司，並負責網頁排版設計與 PM 窗口溝通。</li>
+        </ul>
+        <p class="tags">#PHP #JavaScript #MySQL #CSS #AWS #Linux</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Selected Projects</h2>
+      <div class="projects">
+        <div class="project"><h3>中原大學衛保組衛教小遊戲</h3><p>高流量衛教互動遊戲與抽獎系統</p><a href="https://marvel.jiousaio.com/">marvel.jiousaio.com</a></div>
+        <div class="project"><h3>臺灣碳材料學會</h3><p>學會官網、部落格與後台管理系統</p><a href="https://carboncst.com/">carboncst.com</a></div>
+        <div class="project"><h3>九霄空間設計</h3><p>室內設計品牌官方網站</p><a href="https://jiousaio.com/">jiousaio.com</a></div>
+        <div class="project"><h3>憶旺智慧</h3><p>企業官方網站</p><a href="https://www.evoneic.com/">evoneic.com</a></div>
+        <div class="project"><h3>ODDCity</h3><p>互動網頁作品</p><a href="https://10994015.github.io/odd-city/">10994015.github.io/odd-city</a></div>
+        <div class="project"><h3>益康診所 APP</h3><p>診所 APP 介面原型</p><a href="https://10994015.github.io/tripleE/">10994015.github.io/tripleE</a></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>About Me</h2>
+      <p style="color:var(--ink-2);line-height:1.8">大學就讀資訊管理學系開始接觸程式設計，研究所期間一邊在新竹擔任網頁工程師一邊完成學業，累積一年半的業界經驗。碩士論文結合自己對人工智慧的興趣與家人從事的室內設計產業，研究以 GAN 生成室內設計 3D 擬真圖。畢業後與同學成立接案工作室，熟悉完整的系統開發流程，也鍛鍊了專案管理與談案能力；之後投入企業內部系統與大型電商平台開發。下班後仍持續透過書籍、技術社群與線上課程學習新技術，希望持續精進專業與團隊經驗，用軟體為企業與社會創造價值。</p>
+    </section>
+  </main>
+</div>
+
+</body>
+</html>
